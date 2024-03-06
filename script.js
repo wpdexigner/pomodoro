@@ -69,37 +69,3 @@ startButton.addEventListener('click', () => {
 });
 
 resetIcon.addEventListener('click', resetTimer);
-
-// Get elements
-const settingsIcon = document.querySelector('.settings-icon');
-const modal = document.getElementById('colorModal');
-const closeBtn = document.querySelector('.close');
-const colorSelect = document.getElementById('colorSelect');
-const applyColorBtn = document.getElementById('applyColor');
-const buttons = document.querySelectorAll('.buttons button');
-
-// Open modal when settings icon is clicked
-settingsIcon.addEventListener('click', () => {
-  modal.style.display = 'block';
-});
-
-// Close modal when close button or outside of modal is clicked
-closeBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-});
-
-// Apply selected color to body background and buttons
-applyColorBtn.addEventListener('click', () => {
-  const selectedColor = colorSelect.value;
-  document.body.style.backgroundColor = selectedColor;
-  buttons.forEach(button => {
-    button.style.backgroundColor = selectedColor;
-  });
-  modal.style.display = 'none';
-});
