@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="buttons-container">
+        <div class="buttons">
+          <button id="focus">Focus</button>
+          <button id="short-break">Short Break</button>
+          <button id="long-break">Long Break</button>
+        </div>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-rotate-left reset-icon"></i>
+        <i class="fa-solid fa-gear settings-icon"></i>
+      </div>
+    </div>
+    <div class="timer">23:47</div>
+    <div class="controls">
+      <i class="fa-regular fa-circle-play start-icon"></i>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  
+  <!-- Modal Popup -->
+<div id="colorModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h4>Select Background Color</h4>
+    <select id="colorSelect">
+      <option value="#F1F1EF">Default</option>
+      <option value="#FDEBEC">Red</option>
+      <option value="#FBF3DB">Yellow</option>
+      <option value="#EDF3EC">Green</option>
+      <option value="#E7F3F8">Blue</option>
+      <option value="#F4EEEE">Brown</option>
+      <option value="#FAF1F5">Pink</option>
+      <option value="#F6F3F9">Purple</option>
+      <option value="#FAEBDD">Orange</option>
+    </select>
+    <button id="applyColor">Apply</button>
+  </div>
+</div>
+  
+  
+</body>
+</html>
