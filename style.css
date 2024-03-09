@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
   max-width: 500px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
 
 .buttons-container {
